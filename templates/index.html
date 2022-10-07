@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bildungsscraper</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+    <form action="liste" method="post">
+        
+        <h1>Bildung for Everyone</h1>
+        <br>
+        <input type="submit" value="Liste Aktualisieren" id="refresh">
+        <br>
+        {% for message in get_flashed_messages() %}
+             <p>{{ message }}</p>
+         {% endfor %}
+
+    </form>
+</body>
+</html>
