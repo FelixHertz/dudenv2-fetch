@@ -159,7 +159,7 @@ input {
 
 
 
-@media (max-device-width: 850px) 
+@media (max-width: 850px) 
 {
 	.nw{
 		margin-top: 2em ;
@@ -170,7 +170,7 @@ input {
 		margin-top: 5%;
 	}
 	body {
-		margin: 0 4em 5em; 
+		margin: 0 2em 5em; 
 	}
 	.all {
 		font-size: 1em;
@@ -207,7 +207,7 @@ input {
 }
 
 
-@media all and (min-device-width: 850px)
+@media all and (min-width: 850px)
 {
 	.DeskIMG {
 		visibility: visible;
