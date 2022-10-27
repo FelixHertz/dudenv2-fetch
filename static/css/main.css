@@ -9,96 +9,13 @@
 }
 
 
+
 body {
     background-color: white;
 	margin: 0 10em 5em;
 	
 }
 
-
-
-
-
-input {
-  margin: 20px 20px;
-  padding: 1.5% 3%;
-  font-family: Med;
-  font-size: 1.3em;
-  text-align: center;
-	background-color: #7D02FA;
-	color: white;
-	border:none;
-}
-
-
-
-@media (max-width: 850px)
-{
-	.nw{
-		margin-top: 2em;
-		font-size: 0.8em;
-		text-align: center;
-	}
-	.nw-word{
-		margin-top: 5%;
-	}
-	body {
-		margin: 0 3em 5em; 
-	}
-	.all {
-		font-size: 1em;
-	}
-	
-	.DeskIMG {
-		display:none;
-		
-	}
-	.MobileIMG {
-		visibility: visible;
-		width: 90%;
-		margin-top: 15%;
-	}
-	
-	.desk {
-		display:none;
-	}
-	.mobile {
-		visibility: visible;
-	}
-	
-	input {
-  margin: 20px 20px;
-  padding: 2% 3.5%;
-  font-family: Med;
-  font-size: 1.3em;
-  text-align: center;
-	background-color: #7D02FA;
-	color: white;
-	border:none;
-}
-	
-}
-
-
-
-@media (min-width: 850px)
-{
-	.DeskIMG {
-		visibility: visible;
-	}
-	.MobileIMG {
-		display:none;
-		
-	}
-	
-	.desk {
-		visibility: visible;
-	}
-	.mobile {
-		display:none;
-		
-	}
-}
 	
 	
 
@@ -158,7 +75,7 @@ margin-top: 2%;
 
 #customers tr:nth-child(even){background-color: #f2f2f2;}
 
-#customers tr:hover {background-color: #ddd;}
+#customers td:hover {background-color: #ddd;}
 
 #customers th {
   padding-top: 12px;
@@ -201,3 +118,115 @@ margin-top: 2%;
 	width: 80vw;
 	margin-left: -3em;
 }
+
+.selector {
+	
+	 margin: 20px 20px;
+  padding: 1.5% 3%;
+  font-family: Med;
+  font-size: 1em;
+  text-align: center;
+	background-color: #7D02FA;
+	color: white;
+	border:none;
+}
+
+
+input {
+  margin: 20px 20px;
+  padding: 1.5% 3%;
+  font-family: Med;
+  font-size: 1.3em;
+  text-align: center;
+	background-color: #7D02FA;
+	color: white;
+	border:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-device-width: 850px) 
+{
+	.nw{
+		margin-top: 2em ;
+		font-size: 0.8em;
+		text-align: center;
+	}
+	.nw-word{
+		margin-top: 5%;
+	}
+	body {
+		margin: 0 4em 5em; 
+	}
+	.all {
+		font-size: 1em;
+	}
+	
+	.DeskIMG {
+		display:none;
+		
+	}
+	.MobileIMG {
+		visibility: visible;
+		width: 90%;
+		margin-top: 15%;
+	}
+	
+	.desk {
+		display:none;
+	}
+	.mobile {
+		visibility: visible;
+	}
+	
+	input {
+  margin: 20px 20px;
+  padding: 2% 3.5%;
+  font-family: Med;
+  font-size: 1.3em;
+  text-align: center;
+	background-color: #7D02FA;
+	color: white;
+	border:none;
+	}
+	
+}
+
+
+@media all and (min-device-width: 850px)
+{
+	.DeskIMG {
+		visibility: visible;
+	}
+	.MobileIMG {
+		display:none;
+		
+	}
+	
+	.desk {
+		visibility: visible;
+	}
+	.mobile {
+		display:none;
+		
+	}
+}
+
+
+
+
+
