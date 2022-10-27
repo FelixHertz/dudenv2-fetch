@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bildungsscraper</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
+</head>
+<body>
+	
+	<div class="topnav" id="myTopnav">
+		
+				<a href="./" class="active">DudenV2</a>
+		
+			
+
+		
+	  <div class="menu item">
+				<a href="/alles" class="all">Alle Kategorien</a>
+	  </div>	
+	</div>
+	
+	<div class="nw">
+	
+				<span class="nw-head">
+					Alle
+				</span>
+
+				<span class="nw-head colored">
+					Bildungsprachlichen
+				</span>
+
+				<span class="nw-head">
+					Wörter 
+				</span>
+	
+		<br>
+		
+		<center> 
+		<table id="customers">
+			<tr class="cols">
+			 		<th scope="col">Wort</th>
+					<th scope="col">Gebrauch</th>
+			</tr>
+			
+			{% for item in data %}
+<tr>
+    <td>{{item[0]}}</td>
+    <td>{{item[1]}}</td>
+   
+</tr>
+{% endfor %}
+			
+			
+		</table>
+		</center>
+	</div>
+	
+	
+</body>
+</html>

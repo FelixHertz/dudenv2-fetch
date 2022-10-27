@@ -3,19 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <title>Bildungsscraper</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
 </head>
 <body>
-    <form action="liste" method="post">
-        
-        <h1>Bildung for Everyone</h1>
-        <br>
-        <input type="submit" value="Liste Aktualisieren" id="refresh">
-        <br>
-        {% for message in get_flashed_messages() %}
-             <p>{{ message }}</p>
-         {% endfor %}
+	
+	<div class="topnav" id="myTopnav">
+		
+				<a href="#home" class="active">DudenV2</a>
+		
 
+		
+			<div class="menu item">
+				<a href="/alles" class="all">Alle Kategorien</a>
+			</div>	
+	</div>
+	
+	
+	
+	
+	<div>
+		<div style="">
+			<center>
+				<img src="{{ url_for('static', filename='css/Header.png')}}" class="HeaderIMG DeskIMG">
+				<img src="{{ url_for('static', filename='css/Mobile Icon Duden.PNG')}}" class="MobileIMG">
+			</center>
+			
+		</div>
+	</div>
+	
+    <form action="liste" method="post" class="desk" style="clear:both">
+		<input type="submit" value="Alle Bildungsprachlichen Wörter" id="refresh">
     </form>
+	
+	<center>
+	<form action="liste" method="post" class="mobile" style="clear:both">
+		<input type="submit" value="Alle Bildungsprachlichen Wörter" id="refresh">
+    </form>
+	</center>
+	
+	
+	<div class="nw">
+		
+		
+		<span class="nw-head">
+			Neuestes
+		</span>
+		
+		<span class="nw-head colored">
+			Bildungsprachliches
+		</span>
+		
+		<span class="nw-head">
+			Wort 
+		</span>
+		
+		
+		<br>
+		{% for message in get_flashed_messages(category_filter=["category1"]) %}
+             <p class="nw-word">{{ message }}</p>
+        {% endfor %}
+		<br>
+		
+		<!--This is a comment. Comments are not displayed in the browser
+		<span class="nw-def">
+		-
+		</span>
+		{% for message in get_flashed_messages(category_filter=["category2"]) %}
+		<p class="nw-def">{{ message }}</p>
+        {% endfor %}
+		<span class="nw-def">
+		-
+		</span>
+		-->
+		
+	</div>
+	
+	 
+	
+	
+
+	
 </body>
 </html>
