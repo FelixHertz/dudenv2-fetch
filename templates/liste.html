@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <title>Bildungsscraper</title>
 	<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
+	<!--<link rel="stylesheet" href="C:\Users\Levin\Downloads\Headless\django\greetingApp_FLASK-main\static\css/main.css"></-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='css/Duden-Icon.ico')}}">
@@ -30,17 +31,18 @@
 	{% endif %}
 	
 </div>
-
+			
+<center>
 	{% if alle %}
-	<div class="nw"> <span class="nw-head"> </span> <span class="nw-head colored"> Alle Wörter </span> <span class="nw-head"> Im DudenV2 </span>
+	<div class="nw"> <span class="nw-head"> </span> <span class="nw-head colored"> Alle Wörter </span> <span class="nw-head"> Im DudenV2 </span> </div>
 	{% endif %}
 	{% if list %}
-	<div class="nw"> <span class="nw-head">Alle </span> <span class="nw-head colored"> Bildungssprachlichen </span> <span class="nw-head"> Wörter </span>
+	<div class="nw"> <span class="nw-head">Alle </span> <span class="nw-head colored"> Bildungssprachlichen </span> <span class="nw-head"> Wörter </span> </div>
 	{% endif %}
 	{% if custom %}
-	<div class="nw"> <span class="nw-head">Alle </span> <span class="nw-head colored"> Sortierten </span> <span class="nw-head"> Wörter </span>
+	<div class="nw"> <span class="nw-head">Alle </span> <span class="nw-head colored"> Sortierten </span> <span class="nw-head"> Wörter </span> </div>
 	{% endif %}
-	
+</center>	
 	
 <br>
   <center>
@@ -61,6 +63,7 @@
       {% endfor %}
     </table>
   </center>
+</div>
 </div>
 </body>
 </html>

@@ -157,6 +157,9 @@ margin-top: 2%;
 
 .listclick {
 	border: none;
+	background-color: transparent;
+	color: black;
+	font-size: 1em;
 }
 
 
@@ -217,12 +220,6 @@ margin-top: 2%;
 		float: right;
 	}
 	
-	#customers th {
-		font-size: 1.5em;
-	}
-	#customers tr {
-		font-size: 1.5em;
-	}
 }
 
 
