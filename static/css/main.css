@@ -81,6 +81,8 @@ margin-top: 2%;
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
+	font-family: Bold;
+	font-size: 1.2em;
   background-color: #8B8B8B;
   color: white;
 }
@@ -132,8 +134,11 @@ margin-top: 2%;
 }
 
 
-input {
-  margin: 20px 20px;
+
+
+
+#refresh {
+	 margin: 20px 20px;
   padding: 1.5% 3%;
   font-family: Med;
   font-size: 1.3em;
@@ -150,10 +155,9 @@ input {
 
 
 
-
-
-
-
+.listclick {
+	border: none;
+}
 
 
 
@@ -163,7 +167,7 @@ input {
 {
 	.nw{
 		margin-top: 2em ;
-		font-size: 0.6em;
+		font-size: 0.8em;
 		text-align: center;
 	}
 	.nw-word{
@@ -193,7 +197,7 @@ input {
 		visibility: visible;
 	}
 	
-	input {
+	#refresh {
   margin: 20px 20px;
   padding: 2% 3.5%;
   font-family: Med;
@@ -204,6 +208,21 @@ input {
 	border:none;
 	}
 	
+	.all{
+		display: none;
+	}
+	
+	.fa {
+		display: inline-block!important;
+		float: right;
+	}
+	
+	#customers th {
+		font-size: 1.5em;
+	}
+	#customers tr {
+		font-size: 1.5em;
+	}
 }
 
 
@@ -223,6 +242,13 @@ input {
 	.mobile {
 		display:none;
 		
+	}
+	
+		.all{
+		display: inline-block;
+	}
+	.fa {
+		display: none !important; 
 	}
 }
 

@@ -3,30 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <title>Bildungsscraper</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" type="image/x-icon" href="C:\Users\Levin\Downloads\Headless\django\greetingApp_FLASK-main\static\css\Duden-Icon.ico">
 </head>
 <body>
 	
-	<div class="topnav" id="myTopnav">
+	<div class="topnav" id="myTopnav" style="">
 		
 				<a href="#home" class="active">DudenV2</a>
 		
 
-		
+	
 			<div class="menu item">
 				<a href="/alles" class="all">Alle Kategorien</a>
-			</div>	
+				<a href="/alles">
+					<i class="fa fa-bars fa-2x" style="color: black;"></i>
+				</a>
+				
+			</div>
+		
 	</div>
 	
 	
 	
-	
+
 	<div>
 		<div style="">
 			<center>
 				<img src="{{ url_for('static', filename='css/Header.PNG')}}" class="HeaderIMG DeskIMG">
 				<img src="{{ url_for('static', filename='css/Mobile Icon Duden.PNG')}}" class="MobileIMG">
+				
+				<!-- <img src="{{ url_for('static', filename='css/Header.png')}}" class="HeaderIMG DeskIMG">
+				<img src="{{ url_for('static', filename='css/Mobile Icon Duden.PNG')}}" class="MobileIMG">-->
 			</center>
 			
 		</div>
