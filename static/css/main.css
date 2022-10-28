@@ -177,7 +177,7 @@ margin-top: 2%;
 		margin-top: 5%;
 	}
 	body {
-		margin: 0 2em 5em; 
+		margin: 0 1.4em 5em; 
 	}
 	.all {
 		font-size: 1em;
@@ -219,6 +219,9 @@ margin-top: 2%;
 		display: inline-block!important;
 		float: right;
 	}
+	#customers th {
+		font-size: 3vw;
+	}
 	
 }
 
@@ -251,5 +254,18 @@ margin-top: 2%;
 
 
 
-
+@media (max-width: 550px) {
+	#customers th {
+		font-size: 4vw;
+	}
+	.nw-head {
+		font-size: 8vw;
+	}
+	.listclick{
+		font-size: 3.5vw;
+	}
+	#customers td{
+		font-size: 3.5vw;
+	}
+}
 
