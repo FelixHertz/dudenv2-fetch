@@ -255,6 +255,19 @@ margin-top: 2%;
 
 
 @media (max-width: 550px) {
+	
+	#refresh {
+	margin: 0;
+	}
+	
+	.MobileIMG {
+	width: 95%;
+	}
+	
+	body {
+   		 margin: 0 4vw 5em;
+		}
+	
 	#customers th {
 		font-size: 4vw;
 	}
